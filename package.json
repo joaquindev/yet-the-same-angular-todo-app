@@ -1,0 +1,31 @@
+{
+  "name": "yet-the-same-angular-todo-app",
+  "version": "0.0.1",
+  "description": "Another ToDo App with MEAN stack",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "logfmt": "~0.20.0",
+    "mongoose": "~3.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaquindev/yet-the-same-angular-todo-app.git"
+  },
+  "keywords": [
+    "todo",
+    "node",
+    "express",
+    "angular",
+    "heroku"
+  ],
+  "author": "joaquindev",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/joaquindev/yet-the-same-angular-todo-app/issues"
+  }
+}
