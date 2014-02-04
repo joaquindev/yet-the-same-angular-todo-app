@@ -1,0 +1,19 @@
+body {
+  padding-top: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+.todo-top {
+  margin-top: -35px;
+  margin-bottom: 25px;
+}
+

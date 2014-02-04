@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="angularTodo">
+<head>
+  <meta charset="utf-8">
+  <title>Angular TODO SPA</title>
+  <meta name="description" content="Yet another Angular TODO SPA">
+  <meta name="author" content="joaquindev">
+
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+
+  <script type="text/javascript" src="/js/app.js"></script>
+  <script type="text/javascript" src="js/controllers/mainController.js"></script>
+  <!--[if lt IE 9]/>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body ng-controller="mainController">
+  <h1>AngularJS is running!</h1>
+  <h3>A variable defined in controller: {{name}}</h3>
+</body>
+</html>
