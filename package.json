@@ -27,5 +27,8 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/joaquindev/yet-the-same-angular-todo-app/issues"
+  }, 
+  "engines": {
+    "node":"0.10.x"
   }
 }

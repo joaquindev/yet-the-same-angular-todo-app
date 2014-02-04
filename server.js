@@ -1,10 +1,18 @@
 'use strict';
+var http        = require('http'); 
 var express     = require('express');
 var app         = express();
-var port        = process.env.PORT || 3000;
+//var port        = process.env.PORT || 3000;
 var mongoose    = require('mongoose');
 var database    = require('./config/database');
 var logfmt      = require('logfmt');
+
+var uristring   = 
+  process.env.MONGOLAB_URI || 
+  process.env.MONGOHQ_URL || 
+  'mongodb://localhost/HelloMongoose';
+
+var theport = process.env.PORT || 5000;
 
 mongoose.connect(database.url);
 
@@ -20,6 +28,6 @@ app.configure(function(){
 
 require('./routes/routes')(app); //pass our application into our routes
 
-app.listen(port);
-console.log('Server listening at ' + port);
+app.listen(theport);
+console.log('Server listening at ' + theport);
 exports = module.exports = app;
