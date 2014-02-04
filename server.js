@@ -1,7 +1,12 @@
 'use strict';
-var express = require('express');
-var app     = express();
-var port    = process.env.PORT || 3000;
+var express     = require('express');
+var app         = express();
+var port        = process.env.PORT || 3000;
+var mongoose    = require('mongoose');
+var database    = require('./config/database');
+var logfmt      = require('logfmt');
+
+mongoose.connect(database.url);
 
 app.configure(function(){
   //app.use(logfmt.requestLogger());
