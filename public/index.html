@@ -36,6 +36,9 @@ Server time {{getServerTime()}}
 <div id="todoList" class="col-md-6 text-left">
     <ul>
         <li ng-repeat="todo in todos">
+           <div class="col-md-1">
+            <input type="checkbox" ng-if="todo.done === false" ng-click="doneTodo(todo._id)">
+           </div> 
            <div class="col-md-9">
                 {{todo.text}} 
            </div>

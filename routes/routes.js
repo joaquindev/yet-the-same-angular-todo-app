@@ -28,10 +28,18 @@ module.exports = function(app){
               if (err) res.send(err);
               res.json(todos);  
            }); 
-        }
-    );
+        });
     });
 
+    app.post('/api/todos/done/:todo_id', function(req, res){
+        Todo.update({ _id : req.params.todo_id }, { done : true }, function(err, todo){
+            if (err) res.send(err);
+            Todo.find(function(err, todos){
+                if (err) res.send(err);
+                res.json(todos);
+            }); 
+        });
+    });
 
     //FRONTEND Routes
     //TODO

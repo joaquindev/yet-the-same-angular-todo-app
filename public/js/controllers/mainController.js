@@ -26,4 +26,11 @@ angular.module('angularTodo').
                 $scope.todos = data;
             });
     };
+
+    $scope.doneTodo = function(id){
+       Todos.done(id).
+        success(function(data){
+            $scope.todos = data;
+        }); 
+    };
 }]);
