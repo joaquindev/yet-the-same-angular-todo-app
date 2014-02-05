@@ -2,19 +2,19 @@
 var http        = require('http'); 
 var express     = require('express');
 var logfmt      = require('logfmt');
-var app         = express();
-//var port        = process.env.PORT || 3000;
 var mongoose    = require('mongoose');
-//var database    = require('./config/database');
+var app         = express();
 
 var uristring   = 
   process.env.MONGOLAB_URI || 
   process.env.MONGOHQ_URL || 
   'mongodb://localhost/HelloMongoose';
+//var uristring = require('./config/database');
 
 var theport = process.env.PORT || 5000;
 
 mongoose.connect(uristring);
+//mongoose.connect(uristring.url);
 
 app.configure(function(){
   //app.use(logfmt.requestLogger());
