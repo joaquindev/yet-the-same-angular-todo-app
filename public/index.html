@@ -37,9 +37,10 @@ Server time {{getServerTime()}}
     <ul>
         <li ng-repeat="todo in todos">
            <div class="col-md-1">
-            <input type="checkbox" ng-if="todo.done === false" ng-click="doneTodo(todo._id)">
+             <input type="checkbox" ng-if="todo.done === false" ng-click="doneTodo(todo._id)">
+             <input type="checkbox" ng-if="todo.done === true" ng-click="undoneTodo(todo._id)">
            </div> 
-           <div class="col-md-9">
+           <div class="col-md-9" class="todo-done">
                 {{todo.text}} 
            </div>
            <div class="col-md-2"> 

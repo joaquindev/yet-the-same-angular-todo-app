@@ -10,7 +10,6 @@ module.exports = function(app){
         });
     });
 
-
     app.post('/api/todos', function(req,res){
         Todo.create({text: req.body.text, done: false }, function(err, todo){
             if (err) res.send(err);
@@ -40,7 +39,17 @@ module.exports = function(app){
             }); 
         });
     });
-
+  
+    app.post('/api/todos/undone/:todo_id', function(req, res){
+        Todo.update({ _id : req.params.todo_id }, { done : false }, function(err, todo){
+            if (err) res.send(err);
+            Todo.find(function(err, todos){
+                if (err) res.send(err);
+                res.json(todos);
+            }); 
+        });
+    });
+    
     //FRONTEND Routes
     //TODO
 };

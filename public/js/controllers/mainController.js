@@ -33,4 +33,11 @@ angular.module('angularTodo').
             $scope.todos = data;
         }); 
     };
+
+    $scope.undoneTodo = function(id){
+      Todos.undone(id).
+          success(function(data){
+            $scope.todos = data;
+          });
+    };
 }]);
