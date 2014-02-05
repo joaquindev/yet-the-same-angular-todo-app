@@ -14,7 +14,7 @@ var uristring   =
 
 var theport = process.env.PORT || 5000;
 
-mongoose.connect(database.url);
+mongoose.connect(uristring);
 
 app.configure(function(){
   //app.use(logfmt.requestLogger());
