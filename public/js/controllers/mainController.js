@@ -11,4 +11,19 @@ angular.module('angularTodo').
                 });
         }
     };
+
+    $scope.getServerTime = function(){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        return h + ":" + m + ":" + s;
+    };
+
+    $scope.deleteTodo = function(id){
+        Todos.delete(id).
+            success(function(data){
+                $scope.todos = data;
+            });
+    };
 }]);

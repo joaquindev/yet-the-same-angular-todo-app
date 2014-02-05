@@ -26,9 +26,24 @@
 </head>
 <body ng-controller="mainController">
 My Todo List {{todos.length}}
-<hr/>
+<br/>
+Server time {{getServerTime()}}
+<br/>
 <input type="text" placeholder="Add a new todo" ng-model="formData.text" required>
 <button type="submit" ng-click="createTodo()">Add ToDo</button>
-
+<hr/>
+<h4>To Do so far</h2>
+<div id="todoList" class="col-md-6 text-left">
+    <ul>
+        <li ng-repeat="todo in todos">
+           <div class="col-md-9">
+                {{todo.text}} 
+           </div>
+           <div class="col-md-2"> 
+                 <button class="btn btn-danger btn-xs" ng-click="deleteTodo(todo._id)">Delete</button>            
+           </div>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
