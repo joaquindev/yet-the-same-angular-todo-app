@@ -4,7 +4,7 @@ var express     = require('express');
 var app         = express();
 //var port        = process.env.PORT || 3000;
 var mongoose    = require('mongoose');
-var database    = require('./config/database');
+//var database    = require('./config/database');
 var logfmt      = require('logfmt');
 
 var uristring   = 
@@ -14,7 +14,8 @@ var uristring   =
 
 var theport = process.env.PORT || 5000;
 
-mongoose.connect(database.url);
+//mongoose.connect(database.url);
+mongoose.connect(uristring);
 
 app.configure(function(){
   //app.use(logfmt.requestLogger());
