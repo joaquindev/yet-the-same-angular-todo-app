@@ -1,11 +1,11 @@
 yet-the-same-angular-todo-app
 =============================
 
-This repo is going to host the famous Angular Todo App.
+This repo <s>is going to</s> hosts <s>the famous</s> another Angular Todo App.
 
-I'm following the [Angular-Todo repo of Jewelfarazi][url-repo]. Check out his repo to learn about his great work. 
+I code this SPA following the [Angular-Todo repo of Jewelfarazi][url-repo]. Check out his repo to learn about his great work. 
 
-I'm working with HEROKU, the sample application is here: [ToDo Sample App hosted in Heroku][heroku-app]
+I'm working with HEROKU, the sample application deployed to Heroku is  here: [ToDo Sample App hosted in Heroku][heroku-app]
 
 ###TO USE THIS SPA LOCALLY
 
