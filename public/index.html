@@ -55,7 +55,8 @@ Server time {{getServerTime()}}
              <input type="checkbox" ng-if="todo.done === true" ng-click="undoneTodo(todo._id)" checked>
            </div> 
            <div class="col-md-9" class="todo-done">
-                {{todo.text}} 
+             <span ng-if="todo.done === false && todo.text.length != 0">{{ $index + 1 }}. {{ todo.text }}</span>
+             <span ng-if="todo.done === true && todo.text.length != 0" class="todo-done">{{ $index + 1 }}. {{ todo.text }}</span>
            </div>
            <div class="col-md-2"> 
                  <button class="btn btn-danger btn-xs" ng-click="deleteTodo(todo._id)">Delete</button>            
