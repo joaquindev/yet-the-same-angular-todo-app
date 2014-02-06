@@ -7,6 +7,7 @@ angular.module('angularTodo').
             delete: function(id){ return $http.delete('/api/todos/' + id);},
             done: function(id){ return $http.post('/api/todos/done/' + id);},
             undone: function(id){ return $http.post('/api/todos/undone/' + id);},
-            alldone: function(){ return $http.post('/api/todos/alldone');}
+            alldone: function(){ return $http.post('/api/todos/alldone');}, 
+            allundone: function() { return $http.post('/api/todos/allundone');}
         }
 });

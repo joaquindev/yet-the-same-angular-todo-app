@@ -47,4 +47,11 @@ angular.module('angularTodo').
           $scope.todos = data;
         });
     };
+
+    $scope.allundone = function(){
+      Todos.allundone().
+        success(function(data){
+          $scope.todos = data;  
+        });
+    };
 }]);
