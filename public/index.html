@@ -29,8 +29,19 @@ My Todo List {{todos.length}}
 <br/>
 Server time {{getServerTime()}}
 <br/>
-<input type="text" placeholder="Add a new todo" ng-model="formData.text" required>
-<button type="submit" ng-click="createTodo()">Add ToDo</button>
+<form>
+  <div class="col-md-10">
+    <div class="col-md-9 form-group form-inline">
+      <input type="text" placeholder="Add a new todo" ng-model="formData.text" required>
+    </div> 
+    <div class="col-md-3 form-group form-inline">
+      <button type="submit" ng-click="createTodo()">Add ToDo</button>
+    </div>
+  </div> 
+</form>
+<div class="col-md-2">
+  <button class="btn btn-success btn-xs todo-alldone" ng-click="alldone()">Set All Tasks Done</button>
+</div>
 <hr/>
 <h4>To Do so far</h2>
 <div id="todoList" class="col-md-6 text-left">

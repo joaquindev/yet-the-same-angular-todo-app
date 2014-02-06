@@ -40,4 +40,11 @@ angular.module('angularTodo').
             $scope.todos = data;
           });
     };
+
+    $scope.alldone = function(){
+      Todos.alldone().
+        success(function(data){
+          $scope.todos = data;
+        });
+    };
 }]);

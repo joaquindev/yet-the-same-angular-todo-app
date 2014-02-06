@@ -49,6 +49,16 @@ module.exports = function(app){
             }); 
         });
     });
+
+    app.post('/api/todos/alldone',function(req, res){
+      Todo.update({ done : false }, { $set: { done: true }}, { multi: true }, function(err, todo){
+        if (err) res.send(err);
+        Todo.find(function(err, todos){
+          if (err) res.send(err);
+          res.json(todos);
+        });
+      });
+    });
     
     //FRONTEND Routes
     //TODO
