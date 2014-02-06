@@ -1,7 +1,7 @@
 yet-the-same-angular-todo-app
 =============================
 
-This repo <s>is going to</s> hosts <s>the famous</s> another Angular Todo App.
+This repo <strike>is going to</strike> hosts <strike>the famous</strike> another Angular Todo App.
 
 I code this SPA following the [Angular-Todo repo of Jewelfarazi][url-repo]. Check out his repo to learn about his great work. 
 
