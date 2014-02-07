@@ -1,6 +1,8 @@
 yet-the-same-angular-todo-app
 =============================
 
+[FINISHED!](https://github.com/jglovier/gifs/blob/gh-pages/chuck-norris/chuck-norris.gif)
+
 This repo <del>is going to</del> hosts <del>the famous</del> another Angular Todo App.
 
 I code this SPA following the [Angular-Todo repo of Jewelfarazi][url-repo]. Check out his repo to learn about his great work. 
